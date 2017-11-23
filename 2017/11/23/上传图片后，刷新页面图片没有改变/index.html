@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: 知识积累 | 胡朝阳博客</title>
+  <title>上传图片后，刷新页面图片没有改变 | 胡朝阳博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端单身狗">
-<meta property="og:type" content="website">
-<meta property="og:title" content="胡朝阳博客">
-<meta property="og:url" content="http://yoursite.com/tags/知识积累/index.html">
+  <meta name="description" content="原因分析：上传一张图片后，在上传一张图片。页面重新加载时，会先去读取浏览器上的缓存资源，不会从服务器中重新下载图片。所以浏览器会从缓存中已存在的图片，不会替换新的图片。  解决方案：给图片后缀名上加上时间戳。   1var path = &apos;images\xxx\xxx.png&apos; + new Date().getTime();">
+<meta name="keywords" content="疑难问题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="上传图片后，刷新页面图片没有改变">
+<meta property="og:url" content="http://yoursite.com/2017/11/23/上传图片后，刷新页面图片没有改变/index.html">
 <meta property="og:site_name" content="胡朝阳博客">
-<meta property="og:description" content="前端单身狗">
+<meta property="og:description" content="原因分析：上传一张图片后，在上传一张图片。页面重新加载时，会先去读取浏览器上的缓存资源，不会从服务器中重新下载图片。所以浏览器会从缓存中已存在的图片，不会替换新的图片。  解决方案：给图片后缀名上加上时间戳。   1var path = &apos;images\xxx\xxx.png&apos; + new Date().getTime();">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-11-23T10:58:56.131Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡朝阳博客">
-<meta name="twitter:description" content="前端单身狗">
+<meta name="twitter:title" content="上传图片后，刷新页面图片没有改变">
+<meta name="twitter:description" content="原因分析：上传一张图片后，在上传一张图片。页面重新加载时，会先去读取浏览器上的缓存资源，不会从服务器中重新下载图片。所以浏览器会从缓存中已存在的图片，不会替换新的图片。  解决方案：给图片后缀名上加上时间戳。   1var path = &apos;images\xxx\xxx.png&apos; + new Date().getTime();">
   
     <link rel="alternate" href="/atom.xml" title="胡朝阳博客" type="application/atom+xml">
   
@@ -67,42 +69,75 @@
   </div>
 </div>
 
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap animated rubberBand">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/11/14/hello-world/" class="archive-article-date">
-  <time class="post-time" datetime="2017-11-14T08:09:00.000Z" itemprop="datePublished">
+        <section id="main"><article id="post-上传图片后，刷新页面图片没有改变" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/23/上传图片后，刷新页面图片没有改变/" class="article-date">
+  <time class="post-time" datetime="2017-11-23T10:47:00.000Z" itemprop="datePublished">
     <span class="post-month">11月</span><br/>
-    <span class="post-day">14</span>
+    <span class="post-day">23</span>
   </time>
 </a>
-      
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/14/hello-world/">欢迎来到胡朝阳博客</a>
+    <h1 class="article-title" itemprop="name">
+      上传图片后，刷新页面图片没有改变
     </h1>
   
 
-    </header>
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端/">前端</a>
   </div>
+
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>原因分析：上传一张图片后，在上传一张图片。页面重新加载时，会先去读取浏览器上的缓存资源，不会从服务器中重新下载图片。所以浏览器会从缓存中已存在的图片，不会替换新的图片。</p>
+</li>
+<li><p>解决方案：给图片后缀名上加上时间戳。</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var path = <span class="string">'images\xxx\xxx.png'</span> + new Date().getTime();</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/23/上传图片后，刷新页面图片没有改变/" data-id="cjacd9wrs0006fwql2qtx0iwa" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/疑难问题/">疑难问题</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/23/dom点击不上/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">注册事件没有用，点击没有反映</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
 
 </section>
         

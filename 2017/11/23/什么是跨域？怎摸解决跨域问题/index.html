@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>胡朝阳博客</title>
+  <title>什么是跨域？怎摸解决跨域问题 | 胡朝阳博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端单身狗">
-<meta property="og:type" content="website">
-<meta property="og:title" content="胡朝阳博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="什么是跨域？1.同源策略如下：    URL 说明 是否允许通信     http://www.a.com/a.js  http://www.a.com/b.js 同一域名下 允许    http://www.a.com/lab/a.js  http://www.a.com/script/b.js 同一域名下不同文件夹 允许    http://www.a.com:8000/a.jshttp://">
+<meta name="keywords" content="js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="什么是跨域？怎摸解决跨域问题">
+<meta property="og:url" content="http://yoursite.com/2017/11/23/什么是跨域？怎摸解决跨域问题/index.html">
 <meta property="og:site_name" content="胡朝阳博客">
-<meta property="og:description" content="前端单身狗">
+<meta property="og:description" content="什么是跨域？1.同源策略如下：    URL 说明 是否允许通信     http://www.a.com/a.js  http://www.a.com/b.js 同一域名下 允许    http://www.a.com/lab/a.js  http://www.a.com/script/b.js 同一域名下不同文件夹 允许    http://www.a.com:8000/a.jshttp://">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-11-23T10:57:17.788Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡朝阳博客">
-<meta name="twitter:description" content="前端单身狗">
+<meta name="twitter:title" content="什么是跨域？怎摸解决跨域问题">
+<meta name="twitter:description" content="什么是跨域？1.同源策略如下：    URL 说明 是否允许通信     http://www.a.com/a.js  http://www.a.com/b.js 同一域名下 允许    http://www.a.com/lab/a.js  http://www.a.com/script/b.js 同一域名下不同文件夹 允许    http://www.a.com:8000/a.jshttp://">
   
     <link rel="alternate" href="/atom.xml" title="胡朝阳博客" type="application/atom+xml">
   
@@ -67,128 +69,7 @@
   </div>
 </div>
 
-        <section id="main">
-  
-    <article id="post-上传图片后，刷新页面图片没有改变" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/23/上传图片后，刷新页面图片没有改变/" class="article-date">
-  <time class="post-time" datetime="2017-11-23T10:47:00.000Z" itemprop="datePublished">
-    <span class="post-month">11月</span><br/>
-    <span class="post-day">23</span>
-  </time>
-</a>
-   
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/23/上传图片后，刷新页面图片没有改变/">上传图片后，刷新页面图片没有改变</a>
-    </h1>
-  
-
-        <div>
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/前端/">前端</a>
-  </div>
-
-          
-              
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>原因分析：上传一张图片后，在上传一张图片。页面重新加载时，会先去读取浏览器上的缓存资源，不会从服务器中重新下载图片。所以浏览器会从缓存中已存在的图片，不会替换新的图片。</p>
-</li>
-<li><p>解决方案：给图片后缀名上加上时间戳。</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var path = <span class="string">'images\xxx\xxx.png'</span> + new Date().getTime();</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/23/上传图片后，刷新页面图片没有改变/" data-id="cjacd9wrs0006fwql2qtx0iwa" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/疑难问题/">疑难问题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-  
-    <article id="post-dom点击不上" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/23/dom点击不上/" class="article-date">
-  <time class="post-time" datetime="2017-11-23T10:19:00.000Z" itemprop="datePublished">
-    <span class="post-month">11月</span><br/>
-    <span class="post-day">23</span>
-  </time>
-</a>
-   
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/23/dom点击不上/">注册事件没有用，点击没有反映</a>
-    </h1>
-  
-
-        <div>
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/前端/">前端</a>
-  </div>
-
-          
-              
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>问题描述：在首页点击退出登录按钮，这时退出弹框弹出，但是点击确认按钮没有反映。home页面的绑定事件没有问题，代码没有报错。</li>
-<li>原因分析：在home页面生成时，给弹出框的按钮绑定事件是没有用的，这时，弹框的页面dom结构还没有生成，绑定事件是没有作用的。</li>
-<li>修改：在用户点击退出，弹出退出框时，再去绑定事件。即它的dom在页面渲染成功之后再去绑定。</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/23/dom点击不上/" data-id="cjacd9wrj0002fwqlpcibziev" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/疑难问题/">疑难问题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-  
-    <article id="post-什么是跨域？怎摸解决跨域问题" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-什么是跨域？怎摸解决跨域问题" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/11/23/什么是跨域？怎摸解决跨域问题/" class="article-date">
   <time class="post-time" datetime="2017-11-22T16:00:00.000Z" itemprop="datePublished">
@@ -204,8 +85,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/23/什么是跨域？怎摸解决跨域问题/">什么是跨域？怎摸解决跨域问题</a>
+    <h1 class="article-title" itemprop="name">
+      什么是跨域？怎摸解决跨域问题
     </h1>
   
 
@@ -318,75 +199,30 @@
     </footer>
   </div>
   
-</article>
-
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/14/hello-world/" class="article-date">
-  <time class="post-time" datetime="2017-11-14T08:09:00.000Z" itemprop="datePublished">
-    <span class="post-month">11月</span><br/>
-    <span class="post-day">14</span>
-  </time>
-</a>
-   
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2017/11/23/dom点击不上/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
         
+          注册事件没有用，点击没有反映
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/14/hello-world/">欢迎来到胡朝阳博客</a>
-    </h1>
   
+    <a href="/2017/11/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">欢迎来到胡朝阳博客</div>
+    </a>
+  
+</nav>
 
-        <div>
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/前端/">前端</a>
-  </div>
-
-          
-              
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="Welcome-to-my-blog-Tihs-is-a-psersonal-blog-about-IT-technology"><a href="#Welcome-to-my-blog-Tihs-is-a-psersonal-blog-about-IT-technology" class="headerlink" title="Welcome to my blog.Tihs is a psersonal blog about IT technology."></a>Welcome to my blog.Tihs is a psersonal blog about IT technology.</h4><h5 id="Create-a-new-blog-step"><a href="#Create-a-new-blog-step" class="headerlink" title="Create a new blog step:"></a>Create a new blog step:</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<p> Run server</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<p> Generate static files</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<p> Deploy to remote sites</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/14/hello-world/" data-id="cjacd9wrc0000fwql4pv18cd6" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/知识积累/">知识积累</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
 
-
-
-  
 
 </section>
         

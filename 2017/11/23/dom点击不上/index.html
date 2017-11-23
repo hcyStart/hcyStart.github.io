@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: 知识积累 | 胡朝阳博客</title>
+  <title>注册事件没有用，点击没有反映 | 胡朝阳博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端单身狗">
-<meta property="og:type" content="website">
-<meta property="og:title" content="胡朝阳博客">
-<meta property="og:url" content="http://yoursite.com/tags/知识积累/index.html">
+  <meta name="description" content="问题描述：在首页点击退出登录按钮，这时退出弹框弹出，但是点击确认按钮没有反映。home页面的绑定事件没有问题，代码没有报错。 原因分析：在home页面生成时，给弹出框的按钮绑定事件是没有用的，这时，弹框的页面dom结构还没有生成，绑定事件是没有作用的。 修改：在用户点击退出，弹出退出框时，再去绑定事件。即它的dom在页面渲染成功之后再去绑定。">
+<meta name="keywords" content="疑难问题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="注册事件没有用，点击没有反映">
+<meta property="og:url" content="http://yoursite.com/2017/11/23/dom点击不上/index.html">
 <meta property="og:site_name" content="胡朝阳博客">
-<meta property="og:description" content="前端单身狗">
+<meta property="og:description" content="问题描述：在首页点击退出登录按钮，这时退出弹框弹出，但是点击确认按钮没有反映。home页面的绑定事件没有问题，代码没有报错。 原因分析：在home页面生成时，给弹出框的按钮绑定事件是没有用的，这时，弹框的页面dom结构还没有生成，绑定事件是没有作用的。 修改：在用户点击退出，弹出退出框时，再去绑定事件。即它的dom在页面渲染成功之后再去绑定。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-11-23T10:56:39.327Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡朝阳博客">
-<meta name="twitter:description" content="前端单身狗">
+<meta name="twitter:title" content="注册事件没有用，点击没有反映">
+<meta name="twitter:description" content="问题描述：在首页点击退出登录按钮，这时退出弹框弹出，但是点击确认按钮没有反映。home页面的绑定事件没有问题，代码没有报错。 原因分析：在home页面生成时，给弹出框的按钮绑定事件是没有用的，这时，弹框的页面dom结构还没有生成，绑定事件是没有作用的。 修改：在用户点击退出，弹出退出框时，再去绑定事件。即它的dom在页面渲染成功之后再去绑定。">
   
     <link rel="alternate" href="/atom.xml" title="胡朝阳博客" type="application/atom+xml">
   
@@ -67,42 +69,83 @@
   </div>
 </div>
 
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap animated rubberBand">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/11/14/hello-world/" class="archive-article-date">
-  <time class="post-time" datetime="2017-11-14T08:09:00.000Z" itemprop="datePublished">
+        <section id="main"><article id="post-dom点击不上" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/23/dom点击不上/" class="article-date">
+  <time class="post-time" datetime="2017-11-23T10:19:00.000Z" itemprop="datePublished">
     <span class="post-month">11月</span><br/>
-    <span class="post-day">14</span>
+    <span class="post-day">23</span>
   </time>
 </a>
-      
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/14/hello-world/">欢迎来到胡朝阳博客</a>
+    <h1 class="article-title" itemprop="name">
+      注册事件没有用，点击没有反映
     </h1>
   
 
-    </header>
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端/">前端</a>
   </div>
+
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>问题描述：在首页点击退出登录按钮，这时退出弹框弹出，但是点击确认按钮没有反映。home页面的绑定事件没有问题，代码没有报错。</li>
+<li>原因分析：在home页面生成时，给弹出框的按钮绑定事件是没有用的，这时，弹框的页面dom结构还没有生成，绑定事件是没有作用的。</li>
+<li>修改：在用户点击退出，弹出退出框时，再去绑定事件。即它的dom在页面渲染成功之后再去绑定。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/23/dom点击不上/" data-id="cjacd9wrj0002fwqlpcibziev" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/疑难问题/">疑难问题</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/11/23/上传图片后，刷新页面图片没有改变/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          上传图片后，刷新页面图片没有改变
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/11/23/什么是跨域？怎摸解决跨域问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">什么是跨域？怎摸解决跨域问题</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
 
 </section>
         
