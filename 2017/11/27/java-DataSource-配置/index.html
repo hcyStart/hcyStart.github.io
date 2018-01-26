@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>tags | 胡朝阳博客</title>
+  <title>java DataSource 配置 | 胡朝阳博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端单身狗">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="数据库环境配置的含义   例如：123456&amp;lt;bean id=&amp;quot;dataSource&amp;quot; class=&amp;quot;org.springframework.jdbc.datasource.DriverManagerDataSource&amp;quot;&amp;gt;&amp;lt;property name=&amp;quot;driverClassName&amp;quot; value=&amp;quot;orac">
+<meta name="keywords" content="运维">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java DataSource 配置">
+<meta property="og:url" content="http://yoursite.com/2017/11/27/java-DataSource-配置/index.html">
 <meta property="og:site_name" content="胡朝阳博客">
-<meta property="og:description" content="前端单身狗">
+<meta property="og:description" content="数据库环境配置的含义   例如：123456&amp;lt;bean id=&amp;quot;dataSource&amp;quot; class=&amp;quot;org.springframework.jdbc.datasource.DriverManagerDataSource&amp;quot;&amp;gt;&amp;lt;property name=&amp;quot;driverClassName&amp;quot; value=&amp;quot;orac">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-23T10:26:00.298Z">
+<meta property="og:updated_time" content="2017-11-27T04:17:53.624Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="前端单身狗">
+<meta name="twitter:title" content="java DataSource 配置">
+<meta name="twitter:description" content="数据库环境配置的含义   例如：123456&amp;lt;bean id=&amp;quot;dataSource&amp;quot; class=&amp;quot;org.springframework.jdbc.datasource.DriverManagerDataSource&amp;quot;&amp;gt;&amp;lt;property name=&amp;quot;driverClassName&amp;quot; value=&amp;quot;orac">
   
     <link rel="alternate" href="/atom.xml" title="胡朝阳博客" type="application/atom+xml">
   
@@ -68,16 +69,72 @@
   </div>
 </div>
 
-        <section id="main"><article  class="animated rubberBand article article-type-" >
+        <section id="main"><article id="post-java-DataSource-配置" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/27/java-DataSource-配置/" class="article-date">
+  <time class="post-time" datetime="2017-11-27T04:09:00.000Z" itemprop="datePublished">
+    <span class="post-month">11月</span><br/>
+    <span class="post-day">27</span>
+  </time>
+</a>
+   
+  </div>
   <div class="article-inner">
-    <div class="tag-box">
-      <h1>标签</h1>
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      java DataSource 配置
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
-        <a href="/tags/css/" style="font-size: 14px;">css</a> <a href="/tags/js/" style="font-size: 14px;">js</a> <a href="/tags/疑难问题/" style="font-size: 28px;">疑难问题</a> <a href="/tags/知识积累/" style="font-size: 14px;">知识积累</a> <a href="/tags/运维/" style="font-size: 14px;">运维</a>
+        <p>数据库环境配置的含义</p>
+<hr>
+<ul>
+<li>例如：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;bean id=&quot;dataSource&quot; class=&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;&gt;</span><br><span class="line">&lt;property name=&quot;driverClassName&quot; value=&quot;oracle.jdbc.OracleDriver&quot; /&gt;</span><br><span class="line">&lt;property name=&quot;url&quot;  value=&quot;jdbc:oracle:thin:@192.168.88.15:1521:XE&quot; /&gt;</span><br><span class="line">		&lt;property name=&quot;username&quot; value=&quot;oracle&quot; /&gt;</span><br><span class="line">		&lt;property name=&quot;password&quot; value=&quot;123456&quot; /&gt;</span><br><span class="line">	&lt;/bean&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>1: oracle.jdbc.OracleDriver 是连接数据库的驱动<br>2: jdbc:oracle:thin:@192.168.88.15:1521:XE 数据库连接url包含端口（1521），连接数据库名（XE）<br>3: username：数据库连接名字<br>4：password: 数据库连接密码</p>
+
       
     </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/27/java-DataSource-配置/" data-id="cjcvd8zxk0004cwql7mehmmax" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/运维/">运维</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/27/浏览器滚动通过样式去除滚动条/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">浏览器滚动通过样式去除滚动条</div>
+    </a>
+  
+</nav>
+
+  
 </article>
+
+
 
 </section>
         
