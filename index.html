@@ -41,9 +41,9 @@
     <h2 class="author">纯情小王子</h2>
     <h3 class="description">前端单身狗</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>6</strong><br>文章</div></a>
+      <a href="/archives"><div><strong>8</strong><br>文章</div></a>
       <a href="/categories"><div><strong>1</strong><br>分类</div></a>
-      <a href="/tags"><div><strong>5</strong><br>标签</div></a>
+      <a href="/tags"><div><strong>6</strong><br>标签</div></a>
     </div>
     <ul class="blog-link">
      
@@ -68,6 +68,339 @@
 </div>
 
         <section id="main">
+  
+    <article id="post-js实现字符串转日期类型" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/26/js实现字符串转日期类型/" class="article-date">
+  <time class="post-time" datetime="2018-01-26T09:28:00.000Z" itemprop="datePublished">
+    <span class="post-month">1月</span><br/>
+    <span class="post-day">26</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/26/js实现字符串转日期类型/">js实现字符串转日期类型</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="js实现字符串转日期类型"><a href="#js实现字符串转日期类型" class="headerlink" title="js实现字符串转日期类型"></a>js实现字符串转日期类型</h2><ul>
+<li>IE环境下</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let dateStr = &apos;2001/09/01&apos;;</span><br><span class="line">let date = new Date(dateStr);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>其他浏览器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let dateStr = &apos;2001-09-01&apos;;</span><br><span class="line">let date = new Date(dateStr);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/26/js实现字符串转日期类型/" data-id="cjdchy1d800001oql0mnfpymz" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-http请求协议列表" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/26/http请求协议列表/" class="article-date">
+  <time class="post-time" datetime="2018-01-26T03:53:20.000Z" itemprop="datePublished">
+    <span class="post-month">1月</span><br/>
+    <span class="post-day">26</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/26/http请求协议列表/">http请求协议列表</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="http协议请求协议码"><a href="#http协议请求协议码" class="headerlink" title="http协议请求协议码"></a>http协议请求协议码</h4><hr>
+<p>当浏览器从 web 服务器请求服务时，可能会发生错误。<br>以下列举了有可能会返回的一系列 HTTP 状态消息：</p>
+<hr>
+<ul>
+<li>1xx: 信息</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">消息</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">100 Continue</td>
+<td style="text-align:center">服务器仅接收到部分请求，但是一旦服务器并没有拒绝                  该请求，客户端应该继续发送其余的请求。</td>
+</tr>
+<tr>
+<td style="text-align:center">101 Switching Protocols</td>
+<td style="text-align:center">服务器转换协议：服务器将遵从客户的请求转换到另外一种协议。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>2XX:成功</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">消息</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">200 成功</td>
+<td style="text-align:left">请求成功(其后是对get和post的请求应答文档)</td>
+</tr>
+<tr>
+<td style="text-align:left">201 created</td>
+<td style="text-align:left">请求被创建完成，同时新的资源被创建</td>
+</tr>
+<tr>
+<td style="text-align:left">202 Accepted</td>
+<td style="text-align:left">供处理的请求已被接受，但是处理未完成。</td>
+</tr>
+<tr>
+<td style="text-align:left">203 Non-authoritative Information</td>
+<td style="text-align:left">文档已经正常地返回，但一些应答头可能不正确，因为使用的是文档的拷贝。</td>
+</tr>
+<tr>
+<td style="text-align:left">204 No Content</td>
+<td style="text-align:left">没有新文档。浏览器应该继续显示原来的文档。如果用户定期地刷新页面，而Servlet可以确定用户文档足够新，这个状态代码是很有用的。</td>
+</tr>
+<tr>
+<td style="text-align:left">205 Reset Content</td>
+<td style="text-align:left">没有新文档。但浏览器应该重置它所显示的内容。用来强制浏览器清除表单输入内容。</td>
+</tr>
+<tr>
+<td style="text-align:left">206 Partial Content</td>
+<td style="text-align:left">客户发送了一个带有Range头的GET请求，服务器完成了它。</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>3XX:重定向</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">消息</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">300 Multiple Choices</td>
+<td style="text-align:left">多重选择。链接列表。用户可以选择某链接到达目的地。最多允许五个地址。</td>
+</tr>
+<tr>
+<td style="text-align:left">301 Moved Permanently</td>
+<td style="text-align:left">所请求的页面已经转移至新的url。</td>
+</tr>
+<tr>
+<td style="text-align:left">302 Found</td>
+<td style="text-align:left">所请求的页面已经临时转移至新的url。</td>
+</tr>
+<tr>
+<td style="text-align:left">303 See Other</td>
+<td style="text-align:left">所请求的页面可在别的url下被找到。</td>
+</tr>
+<tr>
+<td style="text-align:left">304 Not Modified</td>
+<td style="text-align:left">未按预期修改文档。客户端有缓冲的文档并发出了一个条件性的请求（一般是提供If-Modified-Since头表示客户只想比指定日期更新的文档）。服务器告诉客户，原来缓冲的文档还可以继续使用。</td>
+</tr>
+<tr>
+<td style="text-align:left">305 Use Proxy</td>
+<td style="text-align:left">客户请求的文档应该通过Location头所指明的代理服务器提取。</td>
+</tr>
+<tr>
+<td style="text-align:left">306 Unused</td>
+<td style="text-align:left">此代码被用于前一版本。目前已不再使用，但是代码依然被保留。</td>
+</tr>
+<tr>
+<td style="text-align:left">307 Temporary Redirect</td>
+<td style="text-align:left">被请求的页面已经临时移至新的url。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>4xx:客户端错误</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">消息</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">400 Bad Request</td>
+<td style="text-align:left">服务器未能理解请求。</td>
+</tr>
+<tr>
+<td style="text-align:left">401 Unauthorized</td>
+<td style="text-align:left">被请求的页面需要用户名和密码。</td>
+</tr>
+<tr>
+<td style="text-align:left">402 Payment Required</td>
+<td style="text-align:left">此代码尚无法使用。</td>
+</tr>
+<tr>
+<td style="text-align:left">403 Forbidden</td>
+<td style="text-align:left">对被请求页面的访问被禁止。</td>
+</tr>
+<tr>
+<td style="text-align:left">404 Not Found</td>
+<td style="text-align:left">服务器无法找到被请求的页面。</td>
+</tr>
+<tr>
+<td style="text-align:left">405 Method Not Allowed</td>
+<td style="text-align:left">请求中指定的方法不被允许。</td>
+</tr>
+<tr>
+<td style="text-align:left">406 Not Acceptable</td>
+<td style="text-align:left">服务器生成的响应无法被客户端所接受。</td>
+</tr>
+<tr>
+<td style="text-align:left">407 Proxy Authentication Required</td>
+<td style="text-align:left">用户必须首先使用代理服务器进行验证，这样请求才会被处理。</td>
+</tr>
+<tr>
+<td style="text-align:left">408 Request Timeout</td>
+<td style="text-align:left">请求超出了服务器的等待时间。</td>
+</tr>
+<tr>
+<td style="text-align:left">409 Conflict</td>
+<td style="text-align:left">由于冲突，请求无法被完成。</td>
+</tr>
+<tr>
+<td style="text-align:left">410 Gone</td>
+<td style="text-align:left">被请求的页面不可用。</td>
+</tr>
+<tr>
+<td style="text-align:left">411 Length Required</td>
+<td style="text-align:left">“Content-Length” 未被定义。如果无此内容，服务器不会接受请求。</td>
+</tr>
+<tr>
+<td style="text-align:left">412 Precondition Failed</td>
+<td style="text-align:left">请求中的前提条件被服务器评估为失败。</td>
+</tr>
+<tr>
+<td style="text-align:left">413 Request Entity Too Large</td>
+<td style="text-align:left">由于所请求的实体的太大，服务器不会接受请求。</td>
+</tr>
+<tr>
+<td style="text-align:left">414 Request-url Too Long</td>
+<td style="text-align:left">由于url太长，服务器不会接受请求。当post请求被转换为带有很长的查询信息的get请求时，就会发生这种情况。</td>
+</tr>
+<tr>
+<td style="text-align:left">415 Unsupported Media Type</td>
+<td style="text-align:left">由于媒介类型不被支持，服务器不会接受请求。</td>
+</tr>
+</tbody>
+</table>
+<p>-5XX：服务器错误</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">消息</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">500 Internal Server Error</td>
+<td style="text-align:left">请求未完成。服务器遇到不可预知的情况。</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">501 Not Implemented</td>
+<td style="text-align:left">请求未完成。服务器不支持所请求的功能。</td>
+</tr>
+<tr>
+<td style="text-align:left">502 Bad Gateway</td>
+<td style="text-align:left">请求未完成。服务器从上游服务器收到一个无效的响应。</td>
+</tr>
+<tr>
+<td style="text-align:left">503 Service Unavailable</td>
+<td style="text-align:left">请求未完成。服务器临时过载或当机。</td>
+</tr>
+<tr>
+<td style="text-align:left">504 Gateway Timeout</td>
+<td style="text-align:left">网关超时。</td>
+</tr>
+<tr>
+<td style="text-align:left">505 HTTP Version Not Supported</td>
+<td style="text-align:left">服务器不支持请求中指明的HTTP协议版本。</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/26/http请求协议列表/" data-id="cjdchy1ec000e1oqlwyrxmpp7" class="article-share-link">分享</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
   
     <article id="post-java-DataSource-配置" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -112,7 +445,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/27/java-DataSource-配置/" data-id="cjcvd8zxk0004cwql7mehmmax" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/11/27/java-DataSource-配置/" data-id="cjdchy1em000h1oqlgzesezki" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/运维/">运维</a></li></ul>
@@ -169,7 +502,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/27/浏览器滚动通过样式去除滚动条/" data-id="cjcvd8zwr0000cwql6lm9b884" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/11/27/浏览器滚动通过样式去除滚动条/" data-id="cjdchy1ew000k1oqlfcgwyc7w" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
@@ -229,7 +562,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/23/上传图片后，刷新页面图片没有改变/" data-id="cjahntkbd0002p4ql0c5zw1py" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/11/23/上传图片后，刷新页面图片没有改变/" data-id="cjdchy1di00021oqlmaqq1msz" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/疑难问题/">疑难问题</a></li></ul>
@@ -288,7 +621,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/23/dom点击不上/" data-id="cjahntkbt0007p4qlthhcladw" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/11/23/dom点击不上/" data-id="cjdchy1ds00041oqljhixpdd5" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/疑难问题/">疑难问题</a></li></ul>
@@ -424,7 +757,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/23/什么是跨域？怎摸解决跨域问题/" data-id="cjahntkbd0006p4qlw7mnie1o" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/11/23/什么是跨域？怎摸解决跨域问题/" data-id="cjdchy1em000j1oqljwtvexaf" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
@@ -487,7 +820,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/14/hello-world/" data-id="cjahntkbd0000p4qlfzf2jvr0" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/11/14/hello-world/" data-id="cjdchy1em000g1oql5vg3w4qs" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/知识积累/">知识积累</a></li></ul>
@@ -541,9 +874,9 @@
     <h2 class="author">纯情小王子</h2>
     <h3 class="description">前端单身狗</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>6</strong><br>文章</div></a>
+      <a href="/archives"><div><strong>8</strong><br>文章</div></a>
       <a href="/categories"><div><strong>1</strong><br>分类</div></a>
-      <a href="/tags"><div><strong>5</strong><br>标签</div></a>
+      <a href="/tags"><div><strong>6</strong><br>标签</div></a>
     </div>
 
 
