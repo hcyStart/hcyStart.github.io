@@ -41,8 +41,8 @@
     <h2 class="author">纯情小王子</h2>
     <h3 class="description">前端单身狗</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>11</strong><br>文章</div></a>
-      <a href="/categories"><div><strong>3</strong><br>分类</div></a>
+      <a href="/archives"><div><strong>14</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>4</strong><br>分类</div></a>
       <a href="/tags"><div><strong>6</strong><br>标签</div></a>
     </div>
     <ul class="blog-link">
@@ -68,6 +68,261 @@
 </div>
 
         <section id="main">
+  
+    <article id="post-上传图片后，刷新页面图片没有改变" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/23/上传图片后，刷新页面图片没有改变/" class="article-date">
+  <time class="post-time" datetime="2017-11-23T10:47:00.000Z" itemprop="datePublished">
+    <span class="post-month">11月</span><br/>
+    <span class="post-day">23</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/23/上传图片后，刷新页面图片没有改变/">上传图片后，刷新页面图片没有改变</a>
+    </h1>
+  
+
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端/">前端</a>
+  </div>
+
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>原因分析：上传一张图片后，在上传一张图片。页面重新加载时，会先去读取浏览器上的缓存资源，不会从服务器中重新下载图片。所以浏览器会从缓存中已存在的图片，不会替换新的图片。</p>
+</li>
+<li><p>解决方案：给图片后缀名上加上时间戳。</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var path = <span class="string">'images\xxx\xxx.png'</span> + new Date().getTime();</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/23/上传图片后，刷新页面图片没有改变/" data-id="cjdfl79lc000ovkqlr1u98gi7" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/疑难问题/">疑难问题</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-dom点击不上" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/23/dom点击不上/" class="article-date">
+  <time class="post-time" datetime="2017-11-23T10:19:00.000Z" itemprop="datePublished">
+    <span class="post-month">11月</span><br/>
+    <span class="post-day">23</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/23/dom点击不上/">注册事件没有用，点击没有反映</a>
+    </h1>
+  
+
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端/">前端</a>
+  </div>
+
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>问题描述：在首页点击退出登录按钮，这时退出弹框弹出，但是点击确认按钮没有反映。home页面的绑定事件没有问题，代码没有报错。</li>
+<li>原因分析：在home页面生成时，给弹出框的按钮绑定事件是没有用的，这时，弹框的页面dom结构还没有生成，绑定事件是没有作用的。</li>
+<li>修改：在用户点击退出，弹出退出框时，再去绑定事件。即它的dom在页面渲染成功之后再去绑定。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/23/dom点击不上/" data-id="cjdfl79kn0006vkql12245g6z" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/疑难问题/">疑难问题</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-什么是跨域？怎摸解决跨域问题" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/23/什么是跨域？怎摸解决跨域问题/" class="article-date">
+  <time class="post-time" datetime="2017-11-22T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">11月</span><br/>
+    <span class="post-day">23</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/23/什么是跨域？怎摸解决跨域问题/">什么是跨域？怎摸解决跨域问题</a>
+    </h1>
+  
+
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端/">前端</a>
+  </div>
+
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="什么是跨域？"><a href="#什么是跨域？" class="headerlink" title="什么是跨域？"></a>什么是跨域？</h4><p>1.同源策略如下：</p>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>说明</th>
+<th>是否允许通信</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a> <br> <a href="http://www.a.com/b.js" target="_blank" rel="external">http://www.a.com/b.js</a></td>
+<td>同一域名下</td>
+<td>允许 </td>
+</tr>
+<tr>
+<td><a href="http://www.a.com/lab/a.js" target="_blank" rel="external">http://www.a.com/lab/a.js</a> <br> <a href="http://www.a.com/script/b.js" target="_blank" rel="external">http://www.a.com/script/b.js</a></td>
+<td>同一域名下不同文件夹</td>
+<td>允许 </td>
+</tr>
+<tr>
+<td><a href="http://www.a.com:8000/a.js" target="_blank" rel="external">http://www.a.com:8000/a.js</a><br><a href="http://www.a.com/b.js" target="_blank" rel="external">http://www.a.com/b.js</a></td>
+<td>同一域名，不同端口</td>
+<td>不允许 </td>
+</tr>
+<tr>
+<td><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a><br><a href="https://www.a.com/b.js" target="_blank" rel="external">https://www.a.com/b.js</a></td>
+<td>同一域名，不同协议</td>
+<td>不允许 </td>
+</tr>
+<tr>
+<td><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a><br><a href="http://70.32.92.74/b.js" target="_blank" rel="external">http://70.32.92.74/b.js</a></td>
+<td>域名和域名对应ip</td>
+<td>不允许 </td>
+</tr>
+<tr>
+<td><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a><br><a href="http://script.a.com/b.js" target="_blank" rel="external">http://script.a.com/b.js</a></td>
+<td>主域相同，子域不同</td>
+<td>不允许 </td>
+</tr>
+<tr>
+<td><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a><br><a href="http://a.com/b.js" target="_blank" rel="external">http://a.com/b.js</a></td>
+<td>同一域名，不同二级域名（同上）</td>
+<td>不允许（cookie这种情况下也不允许访问） </td>
+</tr>
+<tr>
+<td><a href="http://www.cnblogs.com/a.js" target="_blank" rel="external">http://www.cnblogs.com/a.js</a><br><a href="http://www.a.com/b.js" target="_blank" rel="external">http://www.a.com/b.js</a></td>
+<td>不同域名</td>
+<td>不允许 </td>
+</tr>
+</tbody>
+</table>
+<p>特别注意两点：</p>
+<ul>
+<li>第一，如果是协议和端口造成的跨域问题“前台”是无能为力的，</li>
+<li>第二：在跨域问题上，域仅仅是通过“URL的首部”来识别而不会去尝试判断相同的ip地址对应着两个域或两个域是否在同一个ip上。“URL的首部”指window.location.protocol +window.location.host，也可以理解为“Domains, protocols and ports must match”。<h3 id="解决跨域"><a href="#解决跨域" class="headerlink" title="解决跨域"></a>解决跨域</h3>1.动态创建script这个没什么好说的，因为script标签不受同源策略的限制。</li>
+<li><p>复制代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function loadScript(url, func) &#123;</span><br><span class="line">  var head = document.head || document.getElementByTagName(&apos;head&apos;)[0];</span><br><span class="line">  var script = document.createElement(&apos;script&apos;);</span><br><span class="line">  script.src = url;</span><br><span class="line"></span><br><span class="line">  script.onload = script.onreadystatechange = function()&#123;</span><br><span class="line">    if(!this.readyState || this.readyState==&apos;loaded&apos; || this.readyState==&apos;complete&apos;)&#123;</span><br><span class="line">      func();</span><br><span class="line">      script.onload = script.onreadystatechange = null;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  head.insertBefore(script, 0);</span><br><span class="line">&#125;</span><br><span class="line">window.baidu = &#123;</span><br><span class="line">  sug: function(data)&#123;</span><br><span class="line">    console.log(data);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">loadScript(&apos;http://suggestion.baidu.com/su?wd=w&apos;,function()&#123;console.log(&apos;loaded&apos;)&#125;);</span><br><span class="line">//我们请求的内容在哪里？</span><br><span class="line">//我们可以在chorme调试面板的source中看到script引入的内容</span><br></pre></td></tr></table></figure>
+<p>2.postMessage（HTML5中的XMLHttpRequest Level 2中的API）</p>
+</li>
+<li><p>1) a.com/index.html中的代码：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe id=&quot;ifr&quot; src=&quot;b.com/index.html&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">window.onload = function() &#123;</span><br><span class="line">    var ifr = document.getElementById(&apos;ifr&apos;);</span><br><span class="line">    var targetOrigin = &apos;http://b.com&apos;;  // 若写成&apos;http://b.com/c/proxy.html&apos;效果一样</span><br><span class="line">                                        // 若写成&apos;http://c.com&apos;就不会执行postMessage了</span><br><span class="line">    ifr.contentWindow.postMessage(&apos;I was there!&apos;, targetOrigin);</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">// b.com/index.html中的代码：</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    window.addEventListener(&apos;message&apos;, function(event)&#123;</span><br><span class="line">        // 通过origin属性判断消息来源地址</span><br><span class="line">        if (event.origin == &apos;http://a.com&apos;) &#123;</span><br><span class="line">            alert(event.data);    // 弹出&quot;I was there!&quot;</span><br><span class="line">            alert(event.source);  // 对a.com、index.html中window对象的引用</span><br><span class="line">                                  // 但由于同源策略，这里event.source不可以访问window对象</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, false);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>3.web sockets</p>
+<ul>
+<li>web sockets是一种浏览器的API，它的目标是在一个单独的持久连接上提供全双工、双向通信。(同源策略对web sockets不适用)</li>
+<li>web sockets原理：在JS创建了web socket之后，会有一个HTTP请求发送到浏览器以发起连接。取得服务器响应后，建立的连接会使用HTTP升级从HTTP协议交换为web sockt协议。</li>
+<li>只有在支持web socket协议的服务器上才能正常工作。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var socket = new WebSockt(&apos;ws://www.baidu.com&apos;);//http-&gt;ws; https-&gt;wss</span><br><span class="line">socket.send(&apos;hello WebSockt&apos;);</span><br><span class="line">socket.onmessage = function(event)&#123;</span><br><span class="line">    var data = event.data;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>4.JSONP</p>
+<ul>
+<li>JSONP包含两部分：回调函数和数据。</li>
+</ul>
+<ul>
+<li>回调函数是当响应到来时要放在当前页面被调用的函数。</li>
+<li><p>数据就是传入回调函数中的json数据，也就是回调函数的参数了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function handleResponse(response)&#123;</span><br><span class="line">    console.log(&apos;The responsed data is: &apos;+response.data);</span><br><span class="line">&#125;</span><br><span class="line">var script = document.createElement(&apos;script&apos;);</span><br><span class="line">script.src = &apos;http://www.baidu.com/json/?callback=handleResponse&apos;;</span><br><span class="line">document.body.insertBefore(script, document.body.firstChild);</span><br><span class="line">/*handleResonse(&#123;&quot;data&quot;: &quot;zhe&quot;&#125;)*/</span><br><span class="line">//原理如下：</span><br><span class="line">//当我们通过script标签请求时</span><br><span class="line">//后台就会根据相应的参数(json,handleResponse)</span><br><span class="line">//来生成相应的json数据(handleResponse(&#123;&quot;data&quot;: &quot;zhe&quot;&#125;))</span><br><span class="line">//最后这个返回的json数据(代码)就会被放在当前js文件中被执行</span><br><span class="line">//至此跨域通信完成</span><br></pre></td></tr></table></figure>
+<p>jsonp虽然很简单，但是有如下缺点：<br>1）安全问题(请求代码中可能存在安全隐患)<br>2）要确定jsonp请求是否失败并不容易</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/23/什么是跨域？怎摸解决跨域问题/" data-id="cjdfl79ln000xvkqljvk4ku3k" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
   
     <article id="post-hello-world" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -118,7 +373,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/14/hello-world/" data-id="cjdcxsh1c0002bwql64rxzh50" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/11/14/hello-world/" data-id="cjdfl79ka0002vkql1uvvynkl" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/知识积累/">知识积累</a></li></ul>
@@ -176,8 +431,8 @@
     <h2 class="author">纯情小王子</h2>
     <h3 class="description">前端单身狗</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>11</strong><br>文章</div></a>
-      <a href="/categories"><div><strong>3</strong><br>分类</div></a>
+      <a href="/archives"><div><strong>14</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>4</strong><br>分类</div></a>
       <a href="/tags"><div><strong>6</strong><br>标签</div></a>
     </div>
 

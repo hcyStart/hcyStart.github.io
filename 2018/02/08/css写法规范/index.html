@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>tags | 胡朝阳博客</title>
+  <title>css写法规范(一) | 胡朝阳博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端单身狗">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="Class 和 ID 使用语义化、通用的命名方式； 使用连字符 - 作为 ID、Class 名称界定符，不要驼峰命名法和下划线； 避免选择器嵌套层级过多，尽量少于 3 级； 避免选择器和 Class、ID 叠加使用；  出于性能考量，在没有必要的情况下避免元素选择器叠加 Class、ID 使用。 声明块格式 选择器分组时，保持独立的选择器占用一行； 声明块的左括号 { 前添加一个空格； 声明块的右">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css写法规范(一)">
+<meta property="og:url" content="http://yoursite.com/2018/02/08/css写法规范/index.html">
 <meta property="og:site_name" content="胡朝阳博客">
-<meta property="og:description" content="前端单身狗">
+<meta property="og:description" content="Class 和 ID 使用语义化、通用的命名方式； 使用连字符 - 作为 ID、Class 名称界定符，不要驼峰命名法和下划线； 避免选择器嵌套层级过多，尽量少于 3 级； 避免选择器和 Class、ID 叠加使用；  出于性能考量，在没有必要的情况下避免元素选择器叠加 Class、ID 使用。 声明块格式 选择器分组时，保持独立的选择器占用一行； 声明块的左括号 { 前添加一个空格； 声明块的右">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-23T10:26:00.298Z">
+<meta property="og:updated_time" content="2018-02-08T09:22:22.658Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="前端单身狗">
+<meta name="twitter:title" content="css写法规范(一)">
+<meta name="twitter:description" content="Class 和 ID 使用语义化、通用的命名方式； 使用连字符 - 作为 ID、Class 名称界定符，不要驼峰命名法和下划线； 避免选择器嵌套层级过多，尽量少于 3 级； 避免选择器和 Class、ID 叠加使用；  出于性能考量，在没有必要的情况下避免元素选择器叠加 Class、ID 使用。 声明块格式 选择器分组时，保持独立的选择器占用一行； 声明块的左括号 { 前添加一个空格； 声明块的右">
   
     <link rel="alternate" href="/atom.xml" title="胡朝阳博客" type="application/atom+xml">
   
@@ -68,16 +68,97 @@
   </div>
 </div>
 
-        <section id="main"><article  class="animated rubberBand article article-type-" >
+        <section id="main"><article id="post-css写法规范" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/08/css写法规范/" class="article-date">
+  <time class="post-time" datetime="2018-02-08T07:01:04.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">08</span>
+  </time>
+</a>
+   
+  </div>
   <div class="article-inner">
-    <div class="tag-box">
-      <h1>标签</h1>
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      css写法规范(一)
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
-        <a href="/tags/css/" style="font-size: 14px;">css</a> <a href="/tags/js/" style="font-size: 14px;">js</a> <a href="/tags/前端/" style="font-size: 28px;">前端</a> <a href="/tags/疑难问题/" style="font-size: 21px;">疑难问题</a> <a href="/tags/知识积累/" style="font-size: 14px;">知识积累</a> <a href="/tags/运维/" style="font-size: 14px;">运维</a>
+        <h3 id="Class-和-ID"><a href="#Class-和-ID" class="headerlink" title="Class 和 ID"></a>Class 和 ID</h3><ul>
+<li>使用语义化、通用的命名方式；</li>
+<li>使用连字符 - 作为 ID、Class 名称界定符，不要驼峰命名法和下划线；</li>
+<li>避免选择器嵌套层级过多，尽量少于 3 级；</li>
+<li>避免选择器和 Class、ID 叠加使用；</li>
+</ul>
+<p>出于性能考量，在没有必要的情况下避免元素选择器叠加 Class、ID 使用。</p>
+<h3 id="声明块格式"><a href="#声明块格式" class="headerlink" title="声明块格式"></a>声明块格式</h3><ul>
+<li>选择器分组时，保持独立的选择器占用一行；</li>
+<li>声明块的左括号 { 前添加一个空格；</li>
+<li>声明块的右括号 } 应单独成行；</li>
+<li>声明语句中的 : 后应添加一个空格；</li>
+<li>声明语句应以分号 ; 结尾；</li>
+<li>一般以逗号分隔的属性值，每个逗号后应添加一个空格；</li>
+<li>rgb()、rgba()、hsl()、hsla() 或 rect() 括号内的值，逗号分隔，但逗号后不添加一个空格；</li>
+<li>对于属性值或颜色参数，省略小于 1 的小数前面的 0 （例如，.5 代替 0.5；-.5px 代替 -0.5px）；</li>
+<li>十六进制值应该全部小写和尽量简写，例如，#fff 代替 #ffffff；</li>
+<li>避免为 0 值指定单位，例如，用 margin: 0; 代替 margin: 0px;；</li>
+</ul>
+<h3 id="不要使用-import"><a href="#不要使用-import" class="headerlink" title="不要使用 @import"></a>不要使用 @import</h3><p>与 link 相比，@import 要慢很多，不光增加额外的请求数，还会导致不可预料的问题。</p>
+<ul>
+<li>使用多个元素；</li>
+<li>通过 Sass 或 Less 类似的 CSS 预处理器将多个 CSS 文件编译为一个文件；</li>
+<li>其他 CSS 文件合并工具；</li>
+</ul>
+
       
     </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/08/css写法规范/" data-id="cjdfl79ky000cvkql7jvte457" class="article-share-link">分享</a>
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/02/08/Layout-（布局）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          css写法规范（二）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/02/07/iso系统展示手机，邮箱信息会出现超链接蓝色下划线/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">iso系统展示手机，邮箱信息会出现超链接蓝色下划线</div>
+    </a>
+  
+</nav>
+
+  
 </article>
+
+
 
 </section>
         

@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>tags | 胡朝阳博客</title>
+  <title>less规范 | 胡朝阳博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端单身狗">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="代码组织 @import 变量声明 样式声明  123456@import &amp;quot;mixins/size.less&amp;quot;;@default-text-color: #333;.page &amp;#123;  width: 960px;  margin: 0 auto;&amp;#125; @import 语句@import 语句引用的文需要写在一对引号内，.less 后缀不得省略。引号使用 ‘ 和">
+<meta name="keywords" content="前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="less规范">
+<meta property="og:url" content="http://yoursite.com/2018/02/08/less规范/index.html">
 <meta property="og:site_name" content="胡朝阳博客">
-<meta property="og:description" content="前端单身狗">
+<meta property="og:description" content="代码组织 @import 变量声明 样式声明  123456@import &amp;quot;mixins/size.less&amp;quot;;@default-text-color: #333;.page &amp;#123;  width: 960px;  margin: 0 auto;&amp;#125; @import 语句@import 语句引用的文需要写在一对引号内，.less 后缀不得省略。引号使用 ‘ 和">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-23T10:26:00.298Z">
+<meta property="og:updated_time" content="2018-02-08T09:46:07.322Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="前端单身狗">
+<meta name="twitter:title" content="less规范">
+<meta name="twitter:description" content="代码组织 @import 变量声明 样式声明  123456@import &amp;quot;mixins/size.less&amp;quot;;@default-text-color: #333;.page &amp;#123;  width: 960px;  margin: 0 auto;&amp;#125; @import 语句@import 语句引用的文需要写在一对引号内，.less 后缀不得省略。引号使用 ‘ 和">
   
     <link rel="alternate" href="/atom.xml" title="胡朝阳博客" type="application/atom+xml">
   
@@ -68,16 +69,78 @@
   </div>
 </div>
 
-        <section id="main"><article  class="animated rubberBand article article-type-" >
+        <section id="main"><article id="post-less规范" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/08/less规范/" class="article-date">
+  <time class="post-time" datetime="2018-02-08T09:26:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">08</span>
+  </time>
+</a>
+   
+  </div>
   <div class="article-inner">
-    <div class="tag-box">
-      <h1>标签</h1>
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      less规范
+    </h1>
+  
+
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/css/">css</a>
+  </div>
+
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
-        <a href="/tags/css/" style="font-size: 14px;">css</a> <a href="/tags/js/" style="font-size: 14px;">js</a> <a href="/tags/前端/" style="font-size: 28px;">前端</a> <a href="/tags/疑难问题/" style="font-size: 21px;">疑难问题</a> <a href="/tags/知识积累/" style="font-size: 14px;">知识积累</a> <a href="/tags/运维/" style="font-size: 14px;">运维</a>
+        <h6 id="代码组织"><a href="#代码组织" class="headerlink" title="代码组织"></a>代码组织</h6><ol>
+<li>@import</li>
+<li>变量声明</li>
+<li>样式声明</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;mixins/size.less&quot;;</span><br><span class="line">@default-text-color: #333;</span><br><span class="line">.page &#123;</span><br><span class="line">  width: 960px;</span><br><span class="line">  margin: 0 auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="import-语句"><a href="#import-语句" class="headerlink" title="@import 语句"></a>@import 语句</h5><p>@import 语句引用的文需要写在一对引号内，.less 后缀不得省略。引号使用 ‘ 和 “ 均可，但在同一项目内需统一。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;mixins/size.less&quot;;</span><br><span class="line">@import &quot;mixins/grid.less&quot;;</span><br></pre></td></tr></table></figure></p>
+<h4 id="混入（Mixin）"><a href="#混入（Mixin）" class="headerlink" title="混入（Mixin）"></a>混入（Mixin）</h4><p>在定义 mixin 时，如果 mixin 名称不是一个需要使用的 className，必须加上括号，否则即使不被调用也会输出到 CSS 中。</p>
+<p>如果混入的是本身不输出内容的 mixin，需要在 mixin 后添加括号（即使不传参数），以区分这是否是一个 className。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/* Recommended */</span><br><span class="line">.big-text() &#123;</span><br><span class="line">  font-size: 2em;</span><br><span class="line">&#125;</span><br><span class="line">h3 &#123;</span><br><span class="line">  .big-text(); /* 1 */</span><br><span class="line">  .clearfix(); /* 2 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/08/less规范/" data-id="cjdfl79l4000hvkql2rayjt2e" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/08/Layout-（布局）/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">css写法规范（二）</div>
+    </a>
+  
+</nav>
+
+  
 </article>
+
+
 
 </section>
         

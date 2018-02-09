@@ -41,8 +41,8 @@
     <h2 class="author">纯情小王子</h2>
     <h3 class="description">前端单身狗</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>11</strong><br>文章</div></a>
-      <a href="/categories"><div><strong>3</strong><br>分类</div></a>
+      <a href="/archives"><div><strong>14</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>4</strong><br>分类</div></a>
       <a href="/tags"><div><strong>6</strong><br>标签</div></a>
     </div>
     <ul class="blog-link">
@@ -68,6 +68,214 @@
 </div>
 
         <section id="main">
+  
+    <article id="post-less规范" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/08/less规范/" class="article-date">
+  <time class="post-time" datetime="2018-02-08T09:26:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">08</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/08/less规范/">less规范</a>
+    </h1>
+  
+
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/css/">css</a>
+  </div>
+
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h6 id="代码组织"><a href="#代码组织" class="headerlink" title="代码组织"></a>代码组织</h6><ol>
+<li>@import</li>
+<li>变量声明</li>
+<li>样式声明</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;mixins/size.less&quot;;</span><br><span class="line">@default-text-color: #333;</span><br><span class="line">.page &#123;</span><br><span class="line">  width: 960px;</span><br><span class="line">  margin: 0 auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="import-语句"><a href="#import-语句" class="headerlink" title="@import 语句"></a>@import 语句</h5><p>@import 语句引用的文需要写在一对引号内，.less 后缀不得省略。引号使用 ‘ 和 “ 均可，但在同一项目内需统一。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;mixins/size.less&quot;;</span><br><span class="line">@import &quot;mixins/grid.less&quot;;</span><br></pre></td></tr></table></figure></p>
+<h4 id="混入（Mixin）"><a href="#混入（Mixin）" class="headerlink" title="混入（Mixin）"></a>混入（Mixin）</h4><p>在定义 mixin 时，如果 mixin 名称不是一个需要使用的 className，必须加上括号，否则即使不被调用也会输出到 CSS 中。</p>
+<p>如果混入的是本身不输出内容的 mixin，需要在 mixin 后添加括号（即使不传参数），以区分这是否是一个 className。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/* Recommended */</span><br><span class="line">.big-text() &#123;</span><br><span class="line">  font-size: 2em;</span><br><span class="line">&#125;</span><br><span class="line">h3 &#123;</span><br><span class="line">  .big-text(); /* 1 */</span><br><span class="line">  .clearfix(); /* 2 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/08/less规范/" data-id="cjdfl79l4000hvkql2rayjt2e" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-Layout-（布局）" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/08/Layout-（布局）/" class="article-date">
+  <time class="post-time" datetime="2018-02-08T08:55:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">08</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/08/Layout-（布局）/">css写法规范（二）</a>
+    </h1>
+  
+
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/css/">css</a>
+  </div>
+
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="Avoid-positioning-properties-（避免定位属性）"><a href="#Avoid-positioning-properties-（避免定位属性）" class="headerlink" title="Avoid positioning properties （避免定位属性）"></a>Avoid positioning properties （避免定位属性）</h5><p>Components 应该在不同的上下文中都可以复用，所以应避免设置以下属性：</p>
+<ul>
+<li>Positioning (position, top, left, right, bottom)</li>
+<li>Floats (float, clear)</li>
+<li>Margins (margin)</li>
+<li>Dimensions (width, height) *</li>
+</ul>
+<h5 id="Fixed-dimensions-（固定尺寸）"><a href="#Fixed-dimensions-（固定尺寸）" class="headerlink" title="Fixed dimensions （固定尺寸）"></a>Fixed dimensions （固定尺寸）</h5><p>头像和 logos 这些元素应该设置固定尺寸（宽度，高度…）。</p>
+<h5 id="Components（组件命名）"><a href="#Components（组件命名）" class="headerlink" title="Components（组件命名）"></a>Components（组件命名）</h5><p>从 Components 的角度思考，将网站的模块都作为一个独立的 Components。<br>Components 最少以两个单词命名，通过 - 分离，例如：</p>
+<ul>
+<li>点赞按钮 (.like-button)</li>
+<li>搜索框 (.search-form)</li>
+<li>文章卡片 (.article-card)</li>
+</ul>
+<h5 id="elements-（元素命名）"><a href="#elements-（元素命名）" class="headerlink" title="elements （元素命名）"></a>elements （元素命名）</h5><p>Elements 的类名应尽可能仅有一个单词。</p>
+<p>对于倘若需要两个或以上单词表达的 Elements 类名，不应使用中划线和下划线连接，应直接连接。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.profile-box &#123;</span><br><span class="line">    &gt; .firstname &#123; /* ... */ &#125;</span><br><span class="line">    &gt; .lastname &#123; /* ... */ &#125;</span><br><span class="line">    &gt; .avatar &#123; /* ... */ &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Variants-（变体）"><a href="#Variants-（变体）" class="headerlink" title="Variants （变体）"></a>Variants （变体）</h5><p>Components 和 Elements 可能都会拥有 Variants。<br>Naming variants （变体命名）<br>Variants 的 classname 应带有前缀中划线 -<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.like-button &#123;</span><br><span class="line">  &amp;.-wide &#123; /* ... */ &#125;</span><br><span class="line">  &amp;.-short &#123; /* ... */ &#125;</span><br><span class="line">  &amp;.-disabled &#123; /* ... */ &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Element variants （元素变体）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.shopping-card &#123;</span><br><span class="line">   &gt; .title &#123; /* ... */ &#125;</span><br><span class="line">   &gt; .title.-small &#123; /* ... */ &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/08/Layout-（布局）/" data-id="cjdfl79kg0003vkqlj4v5g90p" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-css写法规范" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/08/css写法规范/" class="article-date">
+  <time class="post-time" datetime="2018-02-08T07:01:04.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">08</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/08/css写法规范/">css写法规范(一)</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Class-和-ID"><a href="#Class-和-ID" class="headerlink" title="Class 和 ID"></a>Class 和 ID</h3><ul>
+<li>使用语义化、通用的命名方式；</li>
+<li>使用连字符 - 作为 ID、Class 名称界定符，不要驼峰命名法和下划线；</li>
+<li>避免选择器嵌套层级过多，尽量少于 3 级；</li>
+<li>避免选择器和 Class、ID 叠加使用；</li>
+</ul>
+<p>出于性能考量，在没有必要的情况下避免元素选择器叠加 Class、ID 使用。</p>
+<h3 id="声明块格式"><a href="#声明块格式" class="headerlink" title="声明块格式"></a>声明块格式</h3><ul>
+<li>选择器分组时，保持独立的选择器占用一行；</li>
+<li>声明块的左括号 { 前添加一个空格；</li>
+<li>声明块的右括号 } 应单独成行；</li>
+<li>声明语句中的 : 后应添加一个空格；</li>
+<li>声明语句应以分号 ; 结尾；</li>
+<li>一般以逗号分隔的属性值，每个逗号后应添加一个空格；</li>
+<li>rgb()、rgba()、hsl()、hsla() 或 rect() 括号内的值，逗号分隔，但逗号后不添加一个空格；</li>
+<li>对于属性值或颜色参数，省略小于 1 的小数前面的 0 （例如，.5 代替 0.5；-.5px 代替 -0.5px）；</li>
+<li>十六进制值应该全部小写和尽量简写，例如，#fff 代替 #ffffff；</li>
+<li>避免为 0 值指定单位，例如，用 margin: 0; 代替 margin: 0px;；</li>
+</ul>
+<h3 id="不要使用-import"><a href="#不要使用-import" class="headerlink" title="不要使用 @import"></a>不要使用 @import</h3><p>与 link 相比，@import 要慢很多，不光增加额外的请求数，还会导致不可预料的问题。</p>
+<ul>
+<li>使用多个元素；</li>
+<li>通过 Sass 或 Less 类似的 CSS 预处理器将多个 CSS 文件编译为一个文件；</li>
+<li>其他 CSS 文件合并工具；</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/08/css写法规范/" data-id="cjdfl79ky000cvkql7jvte457" class="article-share-link">分享</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
   
     <article id="post-iso系统展示手机，邮箱信息会出现超链接蓝色下划线" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -113,7 +321,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/07/iso系统展示手机，邮箱信息会出现超链接蓝色下划线/" data-id="cjdcxsh1p0006bwqlh8ghskr7" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2018/02/07/iso系统展示手机，邮箱信息会出现超链接蓝色下划线/" data-id="cjdfl79kr0008vkql0dxbcdx4" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
@@ -182,7 +390,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/07/网站SEO优化/" data-id="cjdcxsh2f000obwqlfnqv7v1g" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2018/02/07/网站SEO优化/" data-id="cjdfl79lt0010vkqll4k2mfx0" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
@@ -235,7 +443,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/07/seo网站优化/" data-id="cjdcxsh25000dbwqlc3qybvit" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2018/02/07/seo网站优化/" data-id="cjdfl79l0000dvkqlaga3jp99" class="article-share-link">分享</a>
       
       
     </footer>
@@ -290,7 +498,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/26/js实现字符串转日期类型/" data-id="cjdcxsh23000cbwqlwfvxqsww" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2018/01/26/js实现字符串转日期类型/" data-id="cjdfl79kp0007vkqll6r1s6yz" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
@@ -568,7 +776,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/26/http请求协议列表/" data-id="cjdcxsh1u0008bwqltckffdso" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2018/01/26/http请求协议列表/" data-id="cjdfl79lj000uvkqljzypkf7x" class="article-share-link">分享</a>
       
       
     </footer>
@@ -623,7 +831,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/27/java-DataSource-配置/" data-id="cjdcxsh1q0007bwql9yf6gvgi" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/11/27/java-DataSource-配置/" data-id="cjdfl79l7000jvkqlncdogk0o" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/运维/">运维</a></li></ul>
@@ -680,265 +888,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/27/浏览器滚动通过样式去除滚动条/" data-id="cjdcxsh2b000jbwqlmvw62fbm" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/11/27/浏览器滚动通过样式去除滚动条/" data-id="cjdfl79lg000qvkql9c71gyck" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-  
-    <article id="post-上传图片后，刷新页面图片没有改变" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/23/上传图片后，刷新页面图片没有改变/" class="article-date">
-  <time class="post-time" datetime="2017-11-23T10:47:00.000Z" itemprop="datePublished">
-    <span class="post-month">11月</span><br/>
-    <span class="post-day">23</span>
-  </time>
-</a>
-   
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/23/上传图片后，刷新页面图片没有改变/">上传图片后，刷新页面图片没有改变</a>
-    </h1>
-  
-
-        <div>
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/前端/">前端</a>
-  </div>
-
-          
-              
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>原因分析：上传一张图片后，在上传一张图片。页面重新加载时，会先去读取浏览器上的缓存资源，不会从服务器中重新下载图片。所以浏览器会从缓存中已存在的图片，不会替换新的图片。</p>
-</li>
-<li><p>解决方案：给图片后缀名上加上时间戳。</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var path = <span class="string">'images\xxx\xxx.png'</span> + new Date().getTime();</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/23/上传图片后，刷新页面图片没有改变/" data-id="cjdcxsh2d000mbwqlzyroo4m5" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/疑难问题/">疑难问题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-  
-    <article id="post-dom点击不上" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/23/dom点击不上/" class="article-date">
-  <time class="post-time" datetime="2017-11-23T10:19:00.000Z" itemprop="datePublished">
-    <span class="post-month">11月</span><br/>
-    <span class="post-day">23</span>
-  </time>
-</a>
-   
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/23/dom点击不上/">注册事件没有用，点击没有反映</a>
-    </h1>
-  
-
-        <div>
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/前端/">前端</a>
-  </div>
-
-          
-              
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>问题描述：在首页点击退出登录按钮，这时退出弹框弹出，但是点击确认按钮没有反映。home页面的绑定事件没有问题，代码没有报错。</li>
-<li>原因分析：在home页面生成时，给弹出框的按钮绑定事件是没有用的，这时，弹框的页面dom结构还没有生成，绑定事件是没有作用的。</li>
-<li>修改：在用户点击退出，弹出退出框时，再去绑定事件。即它的dom在页面渲染成功之后再去绑定。</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/23/dom点击不上/" data-id="cjdcxsh140000bwqld96zrez7" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/疑难问题/">疑难问题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-  
-    <article id="post-什么是跨域？怎摸解决跨域问题" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/23/什么是跨域？怎摸解决跨域问题/" class="article-date">
-  <time class="post-time" datetime="2017-11-22T16:00:00.000Z" itemprop="datePublished">
-    <span class="post-month">11月</span><br/>
-    <span class="post-day">23</span>
-  </time>
-</a>
-   
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/23/什么是跨域？怎摸解决跨域问题/">什么是跨域？怎摸解决跨域问题</a>
-    </h1>
-  
-
-        <div>
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/前端/">前端</a>
-  </div>
-
-          
-              
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="什么是跨域？"><a href="#什么是跨域？" class="headerlink" title="什么是跨域？"></a>什么是跨域？</h4><p>1.同源策略如下：</p>
-<table>
-<thead>
-<tr>
-<th>URL</th>
-<th>说明</th>
-<th>是否允许通信</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a> <br> <a href="http://www.a.com/b.js" target="_blank" rel="external">http://www.a.com/b.js</a></td>
-<td>同一域名下</td>
-<td>允许 </td>
-</tr>
-<tr>
-<td><a href="http://www.a.com/lab/a.js" target="_blank" rel="external">http://www.a.com/lab/a.js</a> <br> <a href="http://www.a.com/script/b.js" target="_blank" rel="external">http://www.a.com/script/b.js</a></td>
-<td>同一域名下不同文件夹</td>
-<td>允许 </td>
-</tr>
-<tr>
-<td><a href="http://www.a.com:8000/a.js" target="_blank" rel="external">http://www.a.com:8000/a.js</a><br><a href="http://www.a.com/b.js" target="_blank" rel="external">http://www.a.com/b.js</a></td>
-<td>同一域名，不同端口</td>
-<td>不允许 </td>
-</tr>
-<tr>
-<td><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a><br><a href="https://www.a.com/b.js" target="_blank" rel="external">https://www.a.com/b.js</a></td>
-<td>同一域名，不同协议</td>
-<td>不允许 </td>
-</tr>
-<tr>
-<td><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a><br><a href="http://70.32.92.74/b.js" target="_blank" rel="external">http://70.32.92.74/b.js</a></td>
-<td>域名和域名对应ip</td>
-<td>不允许 </td>
-</tr>
-<tr>
-<td><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a><br><a href="http://script.a.com/b.js" target="_blank" rel="external">http://script.a.com/b.js</a></td>
-<td>主域相同，子域不同</td>
-<td>不允许 </td>
-</tr>
-<tr>
-<td><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a><br><a href="http://a.com/b.js" target="_blank" rel="external">http://a.com/b.js</a></td>
-<td>同一域名，不同二级域名（同上）</td>
-<td>不允许（cookie这种情况下也不允许访问） </td>
-</tr>
-<tr>
-<td><a href="http://www.cnblogs.com/a.js" target="_blank" rel="external">http://www.cnblogs.com/a.js</a><br><a href="http://www.a.com/b.js" target="_blank" rel="external">http://www.a.com/b.js</a></td>
-<td>不同域名</td>
-<td>不允许 </td>
-</tr>
-</tbody>
-</table>
-<p>特别注意两点：</p>
-<ul>
-<li>第一，如果是协议和端口造成的跨域问题“前台”是无能为力的，</li>
-<li>第二：在跨域问题上，域仅仅是通过“URL的首部”来识别而不会去尝试判断相同的ip地址对应着两个域或两个域是否在同一个ip上。“URL的首部”指window.location.protocol +window.location.host，也可以理解为“Domains, protocols and ports must match”。<h3 id="解决跨域"><a href="#解决跨域" class="headerlink" title="解决跨域"></a>解决跨域</h3>1.动态创建script这个没什么好说的，因为script标签不受同源策略的限制。</li>
-<li><p>复制代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function loadScript(url, func) &#123;</span><br><span class="line">  var head = document.head || document.getElementByTagName(&apos;head&apos;)[0];</span><br><span class="line">  var script = document.createElement(&apos;script&apos;);</span><br><span class="line">  script.src = url;</span><br><span class="line"></span><br><span class="line">  script.onload = script.onreadystatechange = function()&#123;</span><br><span class="line">    if(!this.readyState || this.readyState==&apos;loaded&apos; || this.readyState==&apos;complete&apos;)&#123;</span><br><span class="line">      func();</span><br><span class="line">      script.onload = script.onreadystatechange = null;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  head.insertBefore(script, 0);</span><br><span class="line">&#125;</span><br><span class="line">window.baidu = &#123;</span><br><span class="line">  sug: function(data)&#123;</span><br><span class="line">    console.log(data);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">loadScript(&apos;http://suggestion.baidu.com/su?wd=w&apos;,function()&#123;console.log(&apos;loaded&apos;)&#125;);</span><br><span class="line">//我们请求的内容在哪里？</span><br><span class="line">//我们可以在chorme调试面板的source中看到script引入的内容</span><br></pre></td></tr></table></figure>
-<p>2.postMessage（HTML5中的XMLHttpRequest Level 2中的API）</p>
-</li>
-<li><p>1) a.com/index.html中的代码：</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe id=&quot;ifr&quot; src=&quot;b.com/index.html&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">window.onload = function() &#123;</span><br><span class="line">    var ifr = document.getElementById(&apos;ifr&apos;);</span><br><span class="line">    var targetOrigin = &apos;http://b.com&apos;;  // 若写成&apos;http://b.com/c/proxy.html&apos;效果一样</span><br><span class="line">                                        // 若写成&apos;http://c.com&apos;就不会执行postMessage了</span><br><span class="line">    ifr.contentWindow.postMessage(&apos;I was there!&apos;, targetOrigin);</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">// b.com/index.html中的代码：</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    window.addEventListener(&apos;message&apos;, function(event)&#123;</span><br><span class="line">        // 通过origin属性判断消息来源地址</span><br><span class="line">        if (event.origin == &apos;http://a.com&apos;) &#123;</span><br><span class="line">            alert(event.data);    // 弹出&quot;I was there!&quot;</span><br><span class="line">            alert(event.source);  // 对a.com、index.html中window对象的引用</span><br><span class="line">                                  // 但由于同源策略，这里event.source不可以访问window对象</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, false);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<p>3.web sockets</p>
-<ul>
-<li>web sockets是一种浏览器的API，它的目标是在一个单独的持久连接上提供全双工、双向通信。(同源策略对web sockets不适用)</li>
-<li>web sockets原理：在JS创建了web socket之后，会有一个HTTP请求发送到浏览器以发起连接。取得服务器响应后，建立的连接会使用HTTP升级从HTTP协议交换为web sockt协议。</li>
-<li>只有在支持web socket协议的服务器上才能正常工作。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var socket = new WebSockt(&apos;ws://www.baidu.com&apos;);//http-&gt;ws; https-&gt;wss</span><br><span class="line">socket.send(&apos;hello WebSockt&apos;);</span><br><span class="line">socket.onmessage = function(event)&#123;</span><br><span class="line">    var data = event.data;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>4.JSONP</p>
-<ul>
-<li>JSONP包含两部分：回调函数和数据。</li>
-</ul>
-<ul>
-<li>回调函数是当响应到来时要放在当前页面被调用的函数。</li>
-<li><p>数据就是传入回调函数中的json数据，也就是回调函数的参数了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function handleResponse(response)&#123;</span><br><span class="line">    console.log(&apos;The responsed data is: &apos;+response.data);</span><br><span class="line">&#125;</span><br><span class="line">var script = document.createElement(&apos;script&apos;);</span><br><span class="line">script.src = &apos;http://www.baidu.com/json/?callback=handleResponse&apos;;</span><br><span class="line">document.body.insertBefore(script, document.body.firstChild);</span><br><span class="line">/*handleResonse(&#123;&quot;data&quot;: &quot;zhe&quot;&#125;)*/</span><br><span class="line">//原理如下：</span><br><span class="line">//当我们通过script标签请求时</span><br><span class="line">//后台就会根据相应的参数(json,handleResponse)</span><br><span class="line">//来生成相应的json数据(handleResponse(&#123;&quot;data&quot;: &quot;zhe&quot;&#125;))</span><br><span class="line">//最后这个返回的json数据(代码)就会被放在当前js文件中被执行</span><br><span class="line">//至此跨域通信完成</span><br></pre></td></tr></table></figure>
-<p>jsonp虽然很简单，但是有如下缺点：<br>1）安全问题(请求代码中可能存在安全隐患)<br>2）要确定jsonp请求是否失败并不容易</p>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/23/什么是跨域？怎摸解决跨域问题/" data-id="cjdcxsh28000hbwqlc5tprsjh" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
 
     </footer>
   </div>
@@ -993,8 +946,8 @@
     <h2 class="author">纯情小王子</h2>
     <h3 class="description">前端单身狗</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>11</strong><br>文章</div></a>
-      <a href="/categories"><div><strong>3</strong><br>分类</div></a>
+      <a href="/archives"><div><strong>14</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>4</strong><br>分类</div></a>
       <a href="/tags"><div><strong>6</strong><br>标签</div></a>
     </div>
 
